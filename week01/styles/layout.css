@@ -8,39 +8,41 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: grid;
     grid-template-areas:
-        "header"
-        "main"
-        "aside"
-        "footer";
-    grid-template-rows: auto 1fr auto auto;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: #f8f9fa;
+        "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
 }
-
 
 header {
     grid-area: header;
-    background-color: #004080;
+    background-color: #333;
     color: white;
     padding: 1rem;
 }
 
 header h1 {
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
 
+nav {
+    grid-area: nav;
+    background-color: black;
+}
 
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 1rem;
-    padding: 0;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0.75rem 0;
 }
 
 nav a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-weight: bold;
 }
 
@@ -48,22 +50,23 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
 main {
     grid-area: main;
-    background-color: #e6f0ff;
+    background-color: #ccc;
     padding: 1rem;
 }
 
 aside {
     grid-area: aside;
-    background-color: #d9edf7;
+    background-color: white;
     padding: 1rem;
 }
 
 footer {
     grid-area: footer;
-    background-color: #00264d;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem; }
+    padding: 1rem;
+    font-weight: bold;
+}
