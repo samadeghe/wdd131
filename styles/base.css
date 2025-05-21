@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #003366;
+    --accent-color: #00cc66;
+    --text-color: #333;
+    --bg-color: #f4f4f4;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #222;
+    gap: 1.5rem;
+    padding: 0.75rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: var(--accent-color);
+    color: #000;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 960px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    width: 150px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 1rem;
+}
+
+.location img {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
