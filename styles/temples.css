@@ -1,0 +1,112 @@
+:root {
+    --heading: "Montserrat", sans-serif;
+    --body: "Lora", serif;
+    --primary: #264653;
+    --secondary: #e76f51;
+    --light: #f1faee;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body);
+    background: #fdfdfd;
+    color: var(--primary);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .8rem 1rem;
+    background: var(--primary);
+    color: var(--light);
+}
+
+header h1 {
+    font-family: var(--heading);
+    font-size: 1.25rem;
+}
+
+#hamburger {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--light);
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+nav a {
+    color: var(--light);
+    text-decoration: none;
+    padding: .4rem .6rem;
+    border-radius: .25rem;
+}
+
+nav a:hover,
+nav a:focus {
+    background: var(--secondary);
+}
+
+nav.open ul {
+    display: flex;
+}
+
+main {
+    padding: 1rem;
+}
+
+main h1 {
+    font-family: var(--heading);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: .4rem;
+    overflow: hidden;
+    background: #fff;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: .5rem;
+    text-align: center;
+    background: var(--light);
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem .5rem 2rem;
+    color: var(--primary);
+    font-size: .85rem;
+}

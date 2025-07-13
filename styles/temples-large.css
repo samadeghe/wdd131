@@ -1,0 +1,21 @@
+@media (min-width: 37.5em) {
+    #hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    main h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
