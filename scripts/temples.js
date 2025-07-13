@@ -1,16 +1,18 @@
+// Hamburger menu toggle
+const hamburger = document.getElementById("hamburger");
+const nav = document.getElementById("mainnav");
 
-const hamburger = document.getElementById('hamburger');
-const nav = document.getElementById('mainnav');
+hamburger.addEventListener("click", () => {
+    nav.classList.toggle("open");
 
-hamburger.addEventListener('click', () => {
-    nav.classList.toggle('open');
+    // Toggle hamburger icon between ☰ and ✖
+    if (nav.classList.contains("open")) {
+        hamburger.textContent = "✖"; // Close icon
+    } else {
+        hamburger.textContent = "☰"; // Hamburger icon
+    }
 });
 
-// Set current year in footer
-const yearSpan = document.getElementById('year');
-const currentYear = new Date().getFullYear();
-yearSpan.textContent = currentYear;
-
-// Set last modified date in footer
-const lastModifiedSpan = document.getElementById('lastModified');
-lastModifiedSpan.textContent = document.lastModified;
+// Footer dynamic date updates
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
