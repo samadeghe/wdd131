@@ -1,0 +1,127 @@
+:root {
+    --mainColor: red;
+    --secondColor: green;
+    --thirdColor: white;
+    --opacity: rgb(255 255 255 / 0.8);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: var(--secondColor);
+    color: var(--thirdColor);
+    border-bottom: 10px solid var(--mainColor);
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.data,
+.weather {
+    background-color: var(--opacity);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.data h2,
+.weather h2 {
+    background-color: var(--mainColor);
+    color: var(--thirdColor);
+    padding: 0.5rem;
+    margin-top: 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    font-size: 0.9rem;
+    border-spacing: 0.5rem;
+}
+
+td:nth-of-type(odd) {
+    font-weight: bold;
+    text-align: right;
+    padding-right: 0.5rem;
+}
+
+.weather img {
+    display: block;
+    margin: 0.5rem auto;
+    width: 60px;
+    height: auto;
+}
+
+footer {
+    background-color: var(--secondColor);
+    color: var(--thirdColor);
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 0.85rem;
+}
+
+/* ------- RESPONSIVE / FLOATING CARDS ON WIDE VIEW ------- */
+@media (min-width: 700px) {
+    .hero {
+        position: relative;
+    }
+
+    .data,
+    .weather {
+        position: absolute;
+        margin: 0;
+    }
+
+    .data {
+        top: 10%;
+        left: 5%;
+    }
+
+    .weather {
+        top: 40%;
+        right: 5%;
+    }
+
+    .data,
+    .weather {
+        width: 250px;
+    }
+
+    .weather img {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+}
+@media (max-width: 699px) {
+    .weather img {
+        display: block;
+    }
+
+    .weather h2::after {
+        content: "";
+    }
+}

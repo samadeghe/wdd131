@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WDD 131 – Place In Africa" />
+    <meta name="author" content="Samantha Adeghe" />
+    <title>Cape Town</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/place.css" />
+    <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Cape Town, South Africa</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/cape-town-large.webp" media="(min-width: 700px)" />
+                <img src="images/new-cape.webp" alt="Cape Town, South Africa" loading="lazy" width="800"
+                    height="500" />
+            </picture>
+
+            <section class="data">
+                <h2>Data</h2>
+                <table>
+                    <tr>
+                        <td>Area:</td>
+                        <td>2,445 km²</td>
+                    </tr>
+                    <tr>
+                        <td>Population:</td>
+                        <td>4.6 million</td>
+                    </tr>
+                    <tr>
+                        <td>Region:</td>
+                        <td>Western Cape</td>
+                    </tr>
+                    <tr>
+                        <td>Language:</td>
+                        <td>English, Afrikaans</td>
+                    </tr>
+                    <tr>
+                        <td>Currency:</td>
+                        <td>South African Rand (ZAR)</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="weather icon" />
+                <table>
+                    <tr>
+                        <td>Temperature:</td>
+                        <td>22°C</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Speed:</td>
+                        <td>3 km/h</td>
+                    </tr>
+                    <tr>
+                        <td>Wind Chill:</td>
+                        <td id="wc">N/A</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> 🌸 Samantha Adeghe 🌸 Madagascar</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
