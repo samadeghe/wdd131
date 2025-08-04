@@ -81,7 +81,6 @@ footer {
     font-size: 0.85rem;
 }
 
-/* ------- RESPONSIVE / FLOATING CARDS ON WIDE VIEW ------- */
 @media (min-width: 700px) {
     .hero {
         position: relative;
