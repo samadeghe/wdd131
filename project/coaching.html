@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Samantha Adeghe - Forex Mastery Hub">
+    <meta name="author" content="Samantha Adeghe">
+    <title>Fx Mastery Hub - Coaching</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html"><img src="images/logo-full.svg"
+                    alt="FX Mastery Hub — Forex coaching & mentorship" width="240" height="60"></a>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="coaching.html" class="active">Coaching</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Coaching Packages</h1>
+        <section class="packages" aria-labelledby="packagesTitle">
+            <h2 id="packagesTitle">Choose a plan</h2>
+            <div class="cards" id="packageList"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year3"></span> FX Mastery Hub — <a href="references.html">References</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for dynamic year
+        document.getElementById('year3').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

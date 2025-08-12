@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Samantha Adeghe - Forex Mastery Hub">
+    <meta name="author" content="Samantha Adeghe">
+    <title>Fx Mastery Hub - About</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html" aria-label="FX Mastery Hub">
+                <img src="images/logo-full.svg" alt="FX Mastery Hub — Forex coaching & mentorship" width="240"
+                    height="60" />
+            </a>
+            <button id="navToggle2" aria-expanded="false" aria-controls="mainNav2" class="nav-toggle">☰</button>
+            <nav id="mainNav2" class="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="coaching.html">Coaching</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article>
+            <h1>About Me</h1>
+            <p>I am a forex coach with hands-on trading experience. I teach risk-managed strategies and help students
+                build repeatable plans.</p>
+
+            <h2>My Approach</h2>
+            <p>Structured lessons, live market reviews, and a focus on preserving capital through strict risk
+                management.</p>
+
+            <h2>Credentials & Results</h2>
+            <ul>
+                <li>Certified trading coach</li>
+                <li>Years trading major currency pairs</li>
+                <li>Student testimonials and case studies available</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year2"></span> FX Mastery Hub — <a href="references.html">References</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for dynamic year
+        document.getElementById('year2').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

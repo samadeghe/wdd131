@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Samantha Adeghe - Forex Mastery Hub">
+    <meta name="author" content="Samantha Adeghe">
+    <title>Fx Mastery Hub - Resources</title>
+    <link rel="stylesheet" href="styles/styles-small.css" media="(max-width: 699px)">
+    <link rel="stylesheet" href="styles/styles-large.css" media="(min-width: 700px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <!-- header/nav copy -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html"><img src="images/logo-full.svg" alt="FX Mastery Hub — Forex coaching & mentorship" width="240" height="60">
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="coaching.html">Coaching</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Resources</h1>
+
+        <section class="resource-controls" aria-label="Resource filters">
+            <label>Filter by level:
+                <select id="levelFilter">
+                    <option value="all">All</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                </select>
+            </label>
+            <button id="saveFavs" class="btn">Save Favorites</button>
+            <button id="clearFavs" class="btn">Clear Favorites</button>
+        </section>
+
+        <section class="resource-list" id="resourceList" aria-live="polite"></section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year4"></span> FX Mastery Hub — <a href="references.html">References</a></p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
